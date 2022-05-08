@@ -1,0 +1,92 @@
+/* Menu */
+
+@media (max-width: 736px) {
+    .menu {
+        display: grid;
+    }
+}
+
+
+
+/* Button */
+
+@media (max-width: 736px) {
+    .menu__button {
+        z-index: 1;
+        display: block;
+        margin: 0;
+        margin-top: 24px;
+        margin-right: 16px;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        justify-self: end;
+    }
+}
+
+@media (min-width: 736px) {
+    .menu__button {
+        display: none;
+    }
+}
+
+/* List */
+
+.menu__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 12px;
+}
+
+@media (max-width: 734px) {
+    .menu__list {
+        display: none;
+        row-gap: 8px;
+        padding-top: 12px;
+        padding-bottom: 220px;
+        padding-left: 64px;
+        box-shadow: 0 50vh 0 50vh var(--special-dark-10a);
+    }
+
+    .menu__list--open {
+        display: grid;
+    }
+}
+
+@media (min-width: 736px) {
+    .menu__list {
+        display: grid;
+        grid-auto-flow: column;
+        column-gap: 8px;
+    }
+}
+
+/* Item */
+
+.menu__item {
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+/* Link */
+
+.menu__link {
+    color: var(--special-dark);
+}
+
+.menu__link[href]:hover {
+    color: var(--special-neutral);
+}
+
+.menu__link--current {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Dewi Expanded', sans-serif;
+}
+
+.menu__link--inactive {
+    color: var(--basic-semi-light);
+}
+
