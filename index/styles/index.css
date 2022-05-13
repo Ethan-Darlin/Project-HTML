@@ -3,6 +3,7 @@
 @import 'fonts.css';
 @import 'box-model.css';
 @import 'variables.css';
+@import 'contact.css';
 
 /* Blocks */
 
@@ -12,3 +13,4 @@
 @import 'blocks/logo.css';
 @import 'blocks/menu.css';
 @import 'blocks/main.css';
+

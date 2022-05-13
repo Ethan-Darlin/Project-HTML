@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.min.css">
+    <link rel="stylesheet" href="../index/styles/contact.css">
+    <title>Document</title>
+    <style>
+   @media (min-width: 733px) {
+            .shapka{
+            background-color: #423E3E;
+            }
+            .color-text {
+            color: #FFFFFF;
+            font-style: normal;
+            }
+            .color-text1 {
+            color: #FFFFFF;
+            font-weight: 100;
+            }
+            .color-text2 {
+            color: #FFFFFF;
+            }
+        }
+        @media (max-width: 734px){
+            .shapka {
+                background-color: #423E3E;
+            }
+          
+            .light {
+                color: white;
+            }
+        }
+        @media (max-width: 733px) {
+            .color-text {
+            color: #FFFFFF;
+            font-style: normal;
+            }  
+        }
+     
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
+        @media (min-width:851px) and (max-width: 1010px) {
+            .textsize{
+            font-size: 9px;
+        }
+    }
+        @media (min-width:735px) and (max-width: 850px) {
+            .textsize{
+            font-size: 7px;
+        }
+    }
+    .siz {
+        color: white;
+        margin-top: 200px;
+    }
+   .bigO {
+        background-image: url(images/main-screan.jpg);
+        width: 100%;
+        height: 700px;
+        padding: 40px;
+    }
+.custom-btn {
+    width: 200px;
+    height: 70px;
+
+}
+
+@media(max-width: 778px) {
+    .UPGRAGE {
+        left: 200px;
+    }
+}
+
+
+
+.shine-button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 30px;
+  margin: 10px 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #fe6637;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fe6637;
+  transition: .2s ease-in-out;
+}
+.shine-button:before {
+  content: "";
+  background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -8px;
+  left: -75px;
+  transform: skewX(-45deg);
+}
+.shine-button:hover {
+  background: #fe6637;
+  color: #fff;
+}
+.shine-button:hover:before {
+  left: 150px;
+  transition: .5s ease-in-out;
+}
+.UPGRAGE {
+    
+    padding: 20px;
+    font-weight: bold;
+    right: 20px;
+    font-size: 40px;
+    
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+.floating-button {
+  text-decoration: none;
+  display: inline-block;
+  width: 150px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: .3s;
+  display: flex;	
+  justify-content: center;
+  margin: 0 auto;
+}
+.floating-button:hover {
+  background: #f11a1a;
+  box-shadow: 0 15px 20px rgba(252, 0, 0, 0.4);
+  color: white;
+  transform: translateY(-7px);
+}
+.but {
+    right: 20px;
+}
+
+
+
+
+#line_block { 
+
+width:910px; 
+
+height:20px; 
+
+
+float:left; 
+
+margin: 0;
+
+
+padding: 0px;
+
+}
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 10px;
+
+  grid-template-areas:
+    "a a a a b b b b"
+    "a a a a b b b b"
+    "c c c c d d d d"
+    "c c c c d d d d";
+  align-items: start;
+}
+.item1 {
+  grid-area: a;
+}
+.item2 {
+  grid-area: b;
+}
+.item3 {
+  grid-area: c;
+}
+.item4 {
+  grid-area: d;
+}
+
+@media (max-width: 1300px) {
+    .wrapper {
+        display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: 20px;
+  grid-template-areas:
+    "a a a a a a a a"
+    "c c c c c c c c"
+    "b b b b b b b b"
+    "d d d d d d d d";
+  align-items: start;
+            }
+
+    
+}
+
+
+@media (min-width: 1301px){
+    .wrapper {
+    grid-gap: 10px;
+}
+}
+
+@media (min-width: 800px){
+    .wrapper {
+    grid-gap: 15px;
+}
+}
+@media ( min-width:550px) and (max-width: 799px){
+    .wrapper {
+    grid-gap: 25px;
+}
+}
+@media ( min-width:300px) and (max-width: 549px){
+    .wrapper {
+    grid-gap: 35px;
+}
+}
+
+
+
+
+@media (min-width: 1301px) {
+    
+}
+
+.container {
+    display: block;
+    overflow: hidden;
+    float: left;
+}
+.children {
+    display: block;
+    float: right;
+   padding-right: 65px;
+    width: 44px;
+    height: 44px;
+}
+@media (min-width: 1301px) {
+    .official__status {
+    text-align: right;
+    margin-right: 13px;
+    font-weight: bold;
+}
+
+}
+@media (min-width: 1301px) {
+    .container {
+    float: right;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+}
+a {
+    text-decoration: none;
+}
+
+.last-cection {
+    background-color: white;
+}
+
+
+
+@media (max-width: 485px) {
+figure {
+    width: 100%;
+    margin-left: 0px;
+}
+}
+
+.all__phex{
+    display: inline-block;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    width: 100%;
+    padding: 0px;
+    
+}
+.phex {
+    display: inline-block;
+    padding: 90px;
+    justify-content: center;
+
+}
+@media (max-width: 408px) {
+    .phex {
+        width: 100%;
+    }
+    .imgfig {
+        width: 100%;
+    }
+}
+.linek {
+    text-align: center;
+}
+figcaption {
+    text-align: center;
+} 
+.fig {
+    padding: 6px;
+}
+
+
+@media (max-width: 778px) {
+    .phex {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 438px) {
+    .phex {
+        padding: 0px;
+    }
+}
+
+
+
+
+
+.ptext {
+    display: flex;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.ptext2 {
+    display: flex;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.polz {
+    text-decoration: none;
+ color: #000000; }
+
+
+
+
+
+
+
+    </style>
+    <style>
+
+
+        *{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+}
+.testimonials{
+  padding: 40px 0;
+  background: #f7f0f0;
+  color: #434343;
+  text-align: center;
+}
+.inner{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.border{
+  width: 160px;
+  height: 5px;
+  background: #76e547;
+  margin: 26px auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col{
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.testimonial{
+  background: #fff;
+  padding: 30px;
+}
+.testimonial img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.name{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.stars{
+  color: #6ab04c;
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:960px) {
+.col{
+  flex: 100%;
+  max-width: 80%;
+}
+}
+
+@media screen and (max-width:600px) {
+.col{
+  flex: 100%;
+  max-width: 100%;
+}
+}
+h1 {
+    vertical-align: inherit;
+}
+.gid {
+    text-decoration: none;
+}
+@media (min-width: 736px) {
+    .gid {
+        color: white;
+
+    }
+}
+@media (max-width: 736px) {
+    .gid {
+        color: black;
+    }
+}
+@media (max-width: 736px) {
+  .color-text5 {
+    color: black;
+  }
+}
+
+        </style>
+</head>
+<body class="page__body">
+  <div class="shapka">
+  <header class="header">
+    <a class="gid" href="../index/index.html" ><div class="header__logo logo">
+          <img class="logo__image" src="images/gide1.svg" width="40" height="44" alt="">
+          <p class="logo__title color-text5" id="light"> GIDEON</p>
+          <p class="logo__tagline color-text1">Магазин PC комплектующих</p>
+      </div>
+      </a>
+      <nav class="header__menu menu">
+          <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list">
+              <div class="menu__icon" aria-hidden="true" width="32" height="32">
+                  <img id="menu" class="menu__icon-menu" src="images/burger.png" height="40px" width="44px"></img>
+                  <img id="menu" class="menu__icon-cross" src="images/krest.svg"height="40px" width="44px"></img>
+              </div>
+          </button>
+          <ul class="menu__list" id="menu__list">
+              <li class="menu__item">
+                  <a class="textsize menu__link menu__link--current color-text2" href="../index/index.html">Главная</a>
+              </li>
+              <li class="menu__item">
+                  <a class="textsize menu__link menu__link--current color-text2 prof" href="../index/upgrade.html">Апгрейд</a>
+              </li>
+              <li class="menu__item">
+                  <a class="textsize menu__link menu__link--current color-text2" href="../index/uslovia.html">Покупателям</a>
+              </li>
+              <li class="menu__item">
+                  <a class="textsize menu__link menu__link--current color-text2" href="#win1">Контакты</a>
+              </li>
+              <li class="menu__item">
+                  <a class="textsize menu__link menu__link--current color-text2" href="../index/reviews.html">Отзывы</a>
+              </li>
+              <li class="menu__item">
+                  <a class="textsize menu__link menu__link--current color-text2"> +375(44) 580-51-01 </a>
+              </li>
+          </ul>
+      </nav>
+  </header>
+    
+    <div class="testimonials">
+        <div class="inner">
+          <h1>Отзывы</h1>
+          <div class="border"></div>
+  
+  
+   <div class="row">
+            <div class="col">
+              <div class="testimonial">
+                <img src="../index/images/man1.jfif" alt="">
+                <div class="name">Александр М.</div>
+                <div class="stars">
+                </div>
+                <p>Покупал сыну для гейминга - игры летают, сборка качественная, хоть и с воздушным охлаждением. Остался очень доволен покупкой.</p>
+              </div>
+            </div>
+  
+            <div class="col">
+              <div class="testimonial">
+                <img src="../index/images/man2.jpg" alt="">
+                <div class="name">UserOk</div>
+                <div class="stars">
+                </div>
+                <p>Приобретаю у "Гидеонов" уже второй компьютер, решил заказать с камнем i7 7700H. Ребята профи и знают толк в технике.</p>
+              </div>
+            </div>
+  
+            <div class="col">
+              <div class="testimonial">
+                <img src="../index/images/man3.jpg" alt="">
+                <div class="name">Генадий Горин</div>
+                <div class="stars">
+                </div>
+                <p>Консультанты магазина отлично помогли с параметрами ПК под необходимые задачи, а с получением нет никаких нареканий.</p>
+              </div>
+            </div>
+            <div class="col">
+                <div class="testimonial">
+                  <img src="../index/images/man4.jpg" alt="">
+                  <div class="name">Дмитрий</div>
+                  <div class="stars">
+                  </div>
+                  <p>Будем рекомендовать данный магазин друзьям и знакомым. Компьютер и сопутсвующее оборудование покупали сыну в подарок, при получении заказа, сын был в восторге! Обработано на 10+.</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="testimonial">
+                  <img src="../index/images/man6.jpg" alt="">
+                  <div class="name">Алексей М.</div>
+                  <div class="stars">
+                  </div>
+                  <p>Спасибо вашей команде за труды! ПК прибыл быстро, упакован был отлично. Система работает как часы, доволен более чем. GIDEON вы лучшие в своем деле. У вас лучше, чем у конкурентов! </p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="testimonial">
+                  <img src="../index/images/man5.jpg"" alt="">
+                  <div class="name">Павел Рарин</div>
+                  <div class="stars">
+                  </div>
+                  <p>Заказывал игровой ноутбук линейки P  PLAY9 Legion и ни разу не пожалел, для меня как для старовера сложно было представить, что такую мощь можно уместить в такой маленькой коробочке.</p>
+                </div>
+              </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          <div class="wrapper">
+            <div class="item1">© 2010-2022 GIDEON. Все права защищены.</br>Используемые торговые марки принадлежат владельцам компании.</div>
+            <div class="item2 official__status">Официальные страницы проекта</div>
+            <div class="item3 polz"><a class="polz" href="../index/uslovia.html">Пользовательское соглашение "GIDEON"</a>></div>
+            <div class="item4 ">
+                <div class="container official__img">
+                  <a href="https://vk.com/s1mplesss"><div class="children"><img src="images/vk.png" width="48px" height="48px"></div></a>
+                  <a href="https://www.instagram.com"><div class="children"><img src="images/inst.png" width="48px" height="48px"></div></a>
+                  <a href="https://tlgrm.ru"><div class="children"><img src="images/telegram.png" width="48px" height="48px"></div></a>
+                  <a href="https://www.facebook.com"><div class="children"><img src="images/facebook.png" width="48px" height="48px"></div></a>
+                </div>
+            </div>
+          </div>
+          <a href="#x" class="overlay" id="win1"></a>
+<div class="popup">
+   <p class="ptext2"> Наши номера</p>
+<p class="ptext"><img class="img0" src="../index/images/mts.png" width="48px" height="48px">+375 (29) 58-051-01</p>
+<p class="ptext"><img class="img0" src="../index/images/beeline.png"width="48px" height="48px">+900 (44) 580-51-01</p>
+<p class="ptext"><img class="img0" src="../index/images/tele2.png"width="48px" height="48px">+901 (29) 580-51-01</p>
+<a class="close"title="Закрыть" href="#close"></a>
+</div>
+
+          <script>
+            (() => {
+                const menuButton = document.querySelector('.menu__button');
+                const menuList = document.querySelector('.menu__list');
+    
+                menuButton.addEventListener('click', () => {
+                    let expanded = menuButton.getAttribute('aria-expanded') === 'true';
+                    menuButton.setAttribute('aria-expanded', !expanded);
+                    menuButton.classList.toggle('menu__button--open');
+                    menuList.classList.toggle('menu__list--open');
+                });
+            })();
+        </script>
+</body>
+</html>

@@ -17,8 +17,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="styles/index.css">
-   <style>
+   <link rel="stylesheet" href="../index/styles/contact.css">
+       <script>
+        //Функция показа
+            function show(state)
+            {
+            document.getElementById('window').style.display = state;	
+            document.getElementById('gray').style.display = state; 		
+            }	
 
+
+        </script> 
+   <style>
+        .ptext {
+    display: flex;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.ptext2 {
+    display: flex;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.polz {
+    text-decoration: none;
+ color: #000000; }
+
+   
 @media (min-width: 900px) and (max-width: 1920px) {
 aside.part .units .unit img {
         width: 60%;
@@ -29,14 +57,83 @@ aside.part .units .unit img {
         width: 80%;
     }
 }
-
+a {
+    text-decoration: none;
+}
+.shine-button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 30px;
+  margin: 10px 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #fe6637;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fe6637;
+  transition: .2s ease-in-out;
+}
+.shine-button:before {
+  content: "";
+  background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -8px;
+  left: -75px;
+  transform: skewX(-45deg);
+}
+.shine-button:hover {
+  background: #fe6637;
+  color: #fff;
+}
+.shine-button:hover:before {
+  left: 150px;
+  transition: .5s ease-in-out;
+}
    </style>
+
+   
+<style>
+
+
+    #window {
+        width: 350px;
+        height: 530px;
+        margin: 40px auto;
+        background: #fff;
+        border: 1px solid #fff;
+        border-radius: 15px;
+        z-index: 150; display: none;
+         position: fixed; left: 0;right: 0;top:0;bottom: 0;
+    } 
+    .form{
+        width: 275px; margin: -15px auto 20px auto; text-align: center;} 
+    .input{
+            width: 260px;padding: 5px; margin-bottom: 10px; } 
+    .radio{
+        margin-bottom: 10px;} .close{margin: 10px 0 0 320px;cursor: pointer;border: 1px solid #ccc; padding: 2px; background: #ccc;} .close:hover{
+            background: #fff;} 
+    #gray{opacity: 0.8; padding: 15px;
+        background-color: rgba(1,1,1,0.75); position: fixed; left: 0;right: 0;top:0;bottom: 0; display: none; z-index:100; overflow: auto; } 
+area {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  text-align: right;
+}
+@media (max-width: 736px) {
+  .color-text5 {
+    color: black;
+  }
+}
+</style>
+
 </head>
 <body class="page__body">
     <header class="header">
         <a href="../index/index.html" ><div class="header__logo logo">
-            <img class="logo__image" src="images/logo.svg" width="40" height="44" alt="">
-            <p class="logo__title">GIDEON</p>
+            <img class="logo__image" src="../index/images/gide1.svg" width="40" height="44" alt="">
+            <p class="logo__title color-text5">GIDEON</p>
             <p class="logo__tagline">МАГАЗИН PC КОМПЛЕКТУЮЩИХ</p>
         </div></a>
         <nav class="header__menu menu">
@@ -48,22 +145,22 @@ aside.part .units .unit img {
             </button>
             <ul class="menu__list" id="menu__list">
                 <li class="menu__item">
-                    <a class="textsize menu__link menu__link--current" href>Главная</a>
+                    <a class="textsize menu__link menu__link--current" href="../index/index.html">Главная</a>
                 </li>
                 <li class="menu__item">
-                    <a class="textsize menu__link menu__link--current">АПГРЕЙД</a>
+                    <a class="textsize menu__link menu__link--current" href="../index/upgrade.html">АПГРЕЙД</a>
                 </li>
                 <li class="menu__item">
-                    <a class="textsize menu__link menu__link--current">ВЛАДЕЛЬЦАМ</a>
+                    <a class="textsize menu__link menu__link--current" href="../index/uslovia.html">Покупателям</a>
                 </li>
                 <li class="menu__item">
-                    <a class="textsize menu__link menu__link--current">КОНТАКТЫ</a>
+                    <a class="textsize menu__link menu__link--current" href="#win1">КОНТАКТЫ</a>
                 </li>
                 <li class="menu__item">
-                    <a class="textsize menu__link menu__link--current" href>СБОРКА pc</a>
+                    <a class="textsize menu__link menu__link--current" href="../index/reviews.html">Отзывы</a>
                 </li>
                 <li class="menu__item">
-                    <a class="textsize menu__link menu__link--current" href>+375 (44) 580-51-01</a>
+                    <a class="textsize menu__link menu__link--current">+375 (44) 580-51-01</a>
                 </li>
             </ul>
         </nav>
@@ -71,18 +168,6 @@ aside.part .units .unit img {
 
     <aside class="aside part">
 
-        <div class="unity-left">
-            <img src="image/Laptop/HP.png" />
-            <a href="https://3dnews.ru/1065440/vlasti-kitaya-prikazali-za-dva-goda-zamenit-inostrannie-pk-i-po-v-strane-na-razrabotki-kitayskih-kompaniy">Акции HP и Dell рухнули после заявление Китая</a>
-            <img src="image/Laptop/AMD.png" />
-            <a href="https://3dnews.ru/1061725/na-konferentsii-gdc-2022-kompaniya-amd-rasskaget-o-novih-tehnologiyah-masshtabirovaniya-izobrageniya-v-igrah">AMD расскажет о новых технологиях масштабирования изображения в играх на конференции GDC 2022 в конце марта</a>
-            <img src="image/Laptop/AMDIntel.png" />
-            <a href="https://sonikelf.ru/intel-ili-amd-problematika-vybora-2/">Объясняем, что лучше, AMD или Intel</a>
-            <img src="image/Laptop/intel.png"" />
-            <a href="https://www.ixbt.com/news/2022/01/05/intel-alder-lake.html">Новая линейка процессоров Intel</a>
-         
-        
-        </div>
 
         <div class="units">
             <h1 class="asort">АССОРТИМЕНТ НОУТБУКОВ</h1>
@@ -91,11 +176,9 @@ aside.part .units .unit img {
                 <div>
                     <h1>Ноутбук HP 255 G8 34P23ES</h1>
                     <p>"15.6" 1920 x 1080 IPS, 60 Гц, несенсорный, AMD Athlon Silver 3050U 2300 МГц, 8 ГБ DDR4, SSD 256 ГБ, видеокарта встроенная, без ОС, цвет крышки серебристый</p>
-                    <form action="#" target="_blank">
-                        <button class="button">
-                            BUY  1448,00 BYN
-                        </button>
-                    </form>
+                    <form method="post" onsubmit="return false">
+                        <button onclick="show('block')" class="regButton shine-button"> BUY  1499,00 BYN</button>
+                             </form>
                 </div>
             </div>
             <div class="unit">
@@ -103,11 +186,9 @@ aside.part .units .unit img {
                 <div>
                     <h1>Ноутбук Lenovo IdeaPad 3 15ALC6 82KU00BXRE</h1>
                     <p>"15.6" 1920 x 1080 IPS, 60 Гц, несенсорный, AMD Ryzen 3 5300U 2600 МГц, 8 ГБ DDR4, SSD 256 ГБ, видеокарта встроенная, без ОС, цвет крышки серый</p>
-                    <form action="#" target="_blank">
-                        <button class="button">
-                            BUY  1790,00 BYN
-                        </button>
-                    </form>
+                    <form method="post" onsubmit="return false">
+                        <button onclick="show('block')" class="regButton shine-button"> BUY  1790,00 BYN</button>
+                             </form>
                 </div>
             </div>
             <div class="unit">
@@ -115,11 +196,9 @@ aside.part .units .unit img {
                 <div>
                     <h1>Ноутбук HP Pavilion 15-eh1009ur 435J8EA</h1>
                     <p>"15.6" 1920 x 1080 IPS, 60 Гц, несенсорный, AMD Ryzen 5 5500U 2100 МГц, 8 ГБ DDR4, SSD 512 ГБ, видеокарта встроенная, без ОС, цвет крышки синий</p>
-                    <form action="#" target="_blank">
-                        <button class="button">
-                            BUY  2499,00 BYN
-                        </button>
-                    </form>
+                    <form method="post" onsubmit="return false">
+                        <button onclick="show('block')" class="regButton shine-button"> BUY  2499,00 BYN</button>
+                             </form>
                 </div>
             </div>
             <div class="unit">
@@ -127,11 +206,9 @@ aside.part .units .unit img {
                 <div>
                     <h1>Ноутбук Huawei MateBook D 15 BoB-WAH9Q 53012KRC</h1>
                     <p>"15.6" 1920 x 1080 OLED, 60 Гц, несенсорный, Intel Core i5 1135G7 2400 МГц, 16 ГБ DDR4, SSD 512 ГБ, видеокарта встроенная, без ОС, цвет крышки черный</p>
-                    <form action="#" target="_blank">
-                        <button class="button">
-                            BUY  2199,00 BYN
-                        </button>
-                    </form>
+                    <form method="post" onsubmit="return false">
+                        <button onclick="show('block')" class="regButton shine-button"> BUY  2199,00 BYN</button>
+                             </form>
                 </div>
             </div>
             <div class="unit">
@@ -139,11 +216,9 @@ aside.part .units .unit img {
                 <div>
                     <h1>Ноутбук ASUS VivoBook 15 K513EA-L11950</h1>
                     <p>"15.6" 1920 x 1080 OLED, 60 Гц, несенсорный, Intel Core i5 1135G7 2400 МГц, 16 ГБ DDR4, SSD 512 ГБ, видеокарта встроенная, без ОС, цвет крышки черный</p>
-                    <form action="#" target="_blank">
-                        <button class="button">
-                            BUY  2650,00 BYN
-                        </button>
-                    </form>
+                    <form method="post" onsubmit="return false">
+                        <button onclick="show('block')" class="regButton shine-button"> BUY  2650,00 BYN</button>
+                             </form>
                 </div>
             </div>
             <div class="unit">
@@ -151,11 +226,9 @@ aside.part .units .unit img {
                 <div>
                     <h1>Ноутбук ASUS VivoBook Pro 15 OLED K3500PC-L1085</h1>
                     <p>15.6" 1920 x 1080 OLED, 60 Гц, несенсорный, Intel Core i5 11300H 3100 МГц, 16 ГБ DDR4, SSD 512 ГБ, видеокарта NVIDIA GeForce RTX 3050 4 ГБ, без ОС, цвет крышки черный</p>
-                    <form action="#" target="_blank">
-                        <button class="button">
-                            BUY  3490,00 BYN
-                        </button>
-                    </form>
+                    <form method="post" onsubmit="return false">
+                        <button onclick="show('block')" class="regButton shine-button"> BUY  3490,00 BYN</button>
+                             </form>
                 </div>
             </div>
             <div class="unit">
@@ -164,11 +237,9 @@ aside.part .units .unit img {
                     <h1>Игровой ноутбук ASUS ROG Strix G15 G513IH-HN014</h1>
                     <p>
                         15.6" 1920 x 1080 IPS, 144 Гц, несенсорный, AMD Ryzen 7 4800H 2900 МГц, 16 ГБ DDR4, SSD 512 ГБ, видеокарта NVIDIA GeForce GTX 1650 4 ГБ GDDR6, без ОС, цвет крышки темно-серый</p>
-                    <form action="#" target="_blank">
-                        <button class="button">
-                            BUY  2955,00  BYN
-                        </button>
-                    </form>
+                        <form method="post" onsubmit="return false">
+                            <button onclick="show('block')" class="regButton shine-button"> BUY  2955,00 BYN</button>
+                                 </form>
                 </div>
             </div>
             <div class="unit">
@@ -176,11 +247,9 @@ aside.part .units .unit img {
                 <div>
                     <h1>Ноутбук ASUS VivoBook Pro 15 OLED K3500PC-L1085</h1>
                     <p>15.6" 1920 x 1080 OLED, 60 Гц, несенсорный, Intel Core i5 11300H 3100 МГц, 16 ГБ DDR4, SSD 512 ГБ, видеокарта NVIDIA GeForce RTX 3050 4 ГБ, без ОС, цвет крышки черный</p>
-                    <form action="#" target="_blank">
-                        <button class="button">
-                            BUY  3490,00 BYN
-                        </button>
-                    </form>
+                    <form method="post" onsubmit="return false">
+                        <button onclick="show('block')" class="regButton shine-button"> BUY  2630,00 BYN</button>
+                             </form>
                 </div>
             </div>
             <div class="unit">
@@ -188,10 +257,8 @@ aside.part .units .unit img {
                 <div>
                     <h1>Игровой ноутбук MSI Thin GF63 11UC-219XRU</h1>
                     <p>15.6" 1920 x 1080 IPS, 144 Гц, несенсорный, Intel Core i5 11400H 2700 МГц, 8 ГБ DDR4, SSD 512 ГБ, видеокарта NVIDIA GeForce RTX 3050 4 ГБ, без ОС, цвет крышки черный</p>
-                    <form action="#" target="_blank">
-                        <button class="button">
-                            BUY  3383,00 BYN
-                        </button>
+                    <form method="post" onsubmit="return false">
+               <button onclick="show('block')" class="regButton shine-button"> BUY  2450,00 BYN</button>
                     </form>
                 </div>
             </div>
@@ -204,14 +271,41 @@ aside.part .units .unit img {
         <div class="item3">"GIDEON" - является товарным знаком ООО "SUPERSTAR", зарегистрированным в Беларуси и других странах.</div>
         <div class="item4 ">
             <div class="container official__img">
-                <div class="children"><img src="images/vk.png" width="48px" height="48px"></div>
-                <div class="children"><img src="images/inst.png" width="48px" height="48px"></div>
-                <div class="children"><img src="images/telegram.png" width="48px" height="48px"></div>
-                <div class="children"><img src="images/facebook.png" width="48px" height="48px"></div>
+                <a href="https://vk.com/s1mplesss"><div class="children"><img src="images/vk.png" width="48px" height="48px"></div></a>
+                <a href="https://www.instagram.com"><div class="children"><img src="images/inst.png" width="48px" height="48px"></div></a>
+                <a href="https://tlgrm.ru"><div class="children"><img src="images/telegram.png" width="48px" height="48px"></div></a>
+                <a href="https://www.facebook.com"><div class="children"><img src="images/facebook.png" width="48px" height="48px"></div></a>
             </div>
         </div>
       </div>
-
+<!-- Модальное окно №1 -->
+<a href="#x" class="overlay" id="win1"></a>
+<div class="popup">
+   <p class="ptext2"> Наши номера</p>
+<p class="ptext"><img class="img0" src="../index/images/mts.png" width="48px" height="48px">+375 (29) 58-051-01</p>
+<p class="ptext"><img class="img0" src="../index/images/beeline.png"width="48px" height="48px">+900 (44) 580-51-01</p>
+<p class="ptext"><img class="img0" src="../index/images/tele2.png"width="48px" height="48px">+901 (29) 580-51-01</p>
+<a class="close"title="Закрыть" href="#close"></a>
+</div>
+                <!-- Задний прозрачный фон -->
+                <div onclick="show('none')" id="gray"></div>
+            <div id="window">
+                <!-- Картинка крестика -->
+                <img class="close" src="../index/images/krestik.png" alt=""  onclick="show('none')">
+                <div class="form">
+                    <h2>Регистрация</h2>
+                    <form action="index.html" name="f1">
+                        <input type="text" placeholder="Имя" name="name1" class="input">
+                        <input type="text" placeholder="Фамилия" name="name2" class="input">
+                        <input type="email" placeholder="Емеил" name="email1" class="input">
+                        <input type="email" placeholder="Подтвердите адрес Электронной Почты" name="email2" class="input">
+                        <input type="password" placeholder="Пароль" name="pass1" class="input">
+                        <input type="password" placeholder="Подтвердите пароль" name="pass2" class="input">
+                        <input type='tel' placeholder="Мобильный телефон" name="tel" class="input">
+                        <input type="submit" value="Регистрация" name="sab" class="input"> Нажимая «Регистрация», вы подтверждаете, что прочитали и согласны с нашими Условиями Пользования и Политикой Конфиденциальности.
+                    </form>
+                </div>
+            </div>
     <script>
         (() => {
             const menuButton = document.querySelector('.menu__button');

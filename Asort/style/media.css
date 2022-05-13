@@ -30,8 +30,8 @@
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        -ms-grid-columns: 20% 20% 20% 20%;
-        grid-template-columns: 20% 20% 20% 20%;
+        -ms-grid-columns: 20% ;
+        grid-template-columns: 20%;
     }
     aside.index>.hh {
         -ms-grid-row: 1;

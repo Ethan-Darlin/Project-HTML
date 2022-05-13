@@ -5,7 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/index.min.css">
-
+    <link rel="stylesheet" href="../index/styles/contact.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+        //Функция показа
+            function show(state)
+            {
+            document.getElementById('window').style.display = state;	
+            document.getElementById('gray').style.display = state; 		
+            }	
+        </script>  
     <style>
         
         @media (min-width: 733px) {
@@ -32,6 +41,12 @@
             .light {
                 color: white;
             }
+        }
+        @media (max-width: 733px) {
+            .color-text {
+            color: #FFFFFF;
+            font-style: normal;
+            }  
         }
      
         .responsive {
@@ -274,7 +289,9 @@ padding: 0px;
 }
 
 }
-
+a {
+    text-decoration: none;
+}
 
 .last-cection {
     background-color: white;
@@ -282,12 +299,16 @@ padding: 0px;
 
 
 
-
-
+@media (max-width: 485px) {
+figure {
+    width: 100%;
+    margin-left: 0px;
+}
+}
 
 .all__phex{
     display: inline-block;
-    background-color: black;
+    background-color: rgb(29, 29, 29);
     color: white;
     width: 100%;
     padding: 0px;
@@ -297,6 +318,15 @@ padding: 0px;
     display: inline-block;
     padding: 90px;
     justify-content: center;
+
+}
+@media (max-width: 408px) {
+    .phex {
+        width: 100%;
+    }
+    .imgfig {
+        width: 100%;
+    }
 }
 .linek {
     text-align: center;
@@ -325,18 +355,75 @@ figcaption {
 
 
 
+.ptext {
+    display: flex;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.ptext2 {
+    display: flex;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.polz {
+    text-decoration: none;
+ color: #000000; }
+
+
+
+
+
 
 
     </style>
+
+
+<style>
+        .regButton {
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            padding: 6px 24px;
+            cursor: pointer;
+        }
+
+        .regButton:hover {
+            background: #ccc;
+        }
+
+        #window {
+            width: 350px;
+            height: 530px;
+            margin: 40px auto;
+            background: #fff;
+            border: 1px solid #fff;
+            border-radius: 15px;
+            z-index: 150; display: none;
+             position: fixed; left: 0;right: 0;top:0;bottom: 0;
+        } 
+        .form{
+            width: 275px; margin: -15px auto 20px auto; text-align: center;} 
+        .input{
+                width: 260px;padding: 5px; margin-bottom: 10px; } 
+        .radio{
+            margin-bottom: 10px;} .close{margin: 10px 0 0 320px;cursor: pointer;border: 1px solid #ccc; padding: 2px; background: #ccc;} .close:hover{
+                background: #fff;} 
+        #gray{opacity: 0.8; padding: 15px;
+            background-color: rgba(1,1,1,0.75); position: fixed; left: 0;right: 0;top:0;bottom: 0; display: none; z-index:100; overflow: auto; } 
+            
+</style>
 </head>
 <body class="page__body">
     <div class="shapka">
     <header class="header">
-        <div class="header__logo logo">
-            <img class="logo__image" src="images/logo.svg" width="40" height="44" alt="">
-            <p class="logo__title color-text" id="light"> GIDEON</p>
-            <p class="logo__tagline color-text1">Магазин PC комплектующих</p>
-        </div>
+        <a href="../index/index.html" > <div class="header__logo logo">
+            <img class="logo__image" src="images/gide1.svg" width="90px" height="100px" alt="">
+            <p class="logo__title color-text tex" id="light"> GIDEON</p>
+            <p class="logo__tagline color-text1 tex">Магазин PC комплектующих</p>
+        </div></a>
         <nav class="header__menu menu">
             <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list">
                 <div class="menu__icon" aria-hidden="true" width="32" height="32">
@@ -346,33 +433,34 @@ figcaption {
             </button>
             <ul class="menu__list" id="menu__list">
                 <li class="menu__item">
-                    <a class="textsize menu__link menu__link--current color-text2" href="#">Главная</a>
+                    <a class="textsize menu__link menu__link--current color-text2" href="index.html">Главная</a>
                 </li>
                 <li class="menu__item">
-                    <a class="textsize menu__link menu__link--current color-text2 prof" href="#">Апгрейд</a>
+                    <a class="textsize menu__link menu__link--current color-text2 prof" href="upgrade.html">Апгрейд</a>
                 </li>
                 <li class="menu__item">
-                    <a class="textsize menu__link menu__link--current color-text2" href="#">Владельцам</a>
+                    <a class="textsize menu__link menu__link--current color-text2" href="../index/uslovia.html">Покупателям</a>
                 </li>
                 <li class="menu__item">
-                    <a class="textsize menu__link menu__link--current color-text2" href="#">Контакты</a>
+                    <a class="textsize menu__link menu__link--current color-text2" href="#win1">Контакты</a>
                 </li>
                 <li class="menu__item">
-                    <a class="textsize menu__link menu__link--current color-text2" href="#">Сборка PC</a>
+                    <a class="textsize menu__link menu__link--current color-text2" href="../index/reviews.html">Отзывы</a>
                 </li>
                 <li class="menu__item">
-                    <a class="textsize menu__link menu__link--current color-text2" href="#"> +375(44) 580-51-01 </a>
+                    <a class="textsize menu__link menu__link--current color-text2" > +375(44) 580-51-01 </a>
                 </li>
             </ul>
         </nav>
     </header>
-    <div class="bigO">
+    
+   <div class="bigO">
         <div class="grih">
             <div class="UPGRAGE">
                 <p class="siz">UPGRADE CENTER<br \>
                 СДЕЛАЙ СВОЙ КОМЬЮТЕР ЛУЧШЕ!</p>
                 <form>
-                    <a href="" class="shine-button">UPGRADE</a>
+                    <a href="upgrade.html" class="shine-button">UPGRADE</a>
                    </form>
             </div>
             </div>
@@ -382,7 +470,7 @@ figcaption {
                 <h1 class="linek">Линейки GIDEON</h1>
                 <div class="phex">
                     <figure>
-                    <img src="images/laptop.png" width="350px" height="300px"> 
+                    <img class="imgfig" src="images/laptop1.png" width="350px" height="300px"> 
                     <figcaption class="fig">Игровые ноутбуки </figcaption>
                     <figcaption class="fig">Мощные и ультратонкие </br>игровые ноутбуки</figcaption>
                     <figcaption class="fig">от 1500$</figcaption>
@@ -391,7 +479,7 @@ figcaption {
                 </div>
                 <div class="phex">
                     <figure>
-                    <img src="images/PC.png"  width="350px" height="300px">
+                    <img class="imgfig" src="images/PC.png"  width="350px" height="300px">
                     <figcaption class="fig">Игровые компьютеры </figcaption>
                     <figcaption class="fig">Самые лучшие игровые</br>компьютеры GIDEON</figcaption>
                     <figcaption class="fig">от 1100$</figcaption>
@@ -400,7 +488,7 @@ figcaption {
                 </div>
                 <div class="phex">
                 <figure>
-                    <img src="images/bledboard.png" width="350px" height="300px">
+                    <img class="imgfig" src="images/bledboard.png" width="350px" height="300px">
                     <figcaption class="fig">Игровая периферия  </figcaption>
                     <figcaption class="fig">Лучшая переферия </br>с самым быстрым откликом</figcaption>
                     <figcaption class="fig">от 110$</figcaption>
@@ -408,23 +496,54 @@ figcaption {
                 </figure>
                 </div>
             </div>
-
+                <!-- Задний прозрачный фон -->
+                <div onclick="show('none')" id="gray"></div>
+            <div id="window">
+                <!-- Картинка крестика -->
+                <img class="close" src="i/close.png" alt=""  onclick="show('none')">
+                <div class="form">
+                    <h2>Регистрация</h2>
+                    <form action="index.html" name="f1">
+                        <input type="text" placeholder="Имя" name="name1" class="input">
+                        <input type="text" placeholder="Фамилия" name="name2" class="input">
+                        <input type="email" placeholder="Емеил" name="email1" class="input">
+                        <input type="email" placeholder="Подтвердите адрес Электронной Почты" name="email2" class="input">
+                        <input type="password" placeholder="Пароль" name="pass1" class="input">
+                        <input type="password" placeholder="Подтвердите пароль" name="pass2" class="input">
+                        <input type='tel' placeholder="Мобильный телефон" name="tel" class="input">
+                        <input type="radio" name="radio1"> Мужчина <input type="radio" name="radio1" class="radio"> Женщина
+                        <input type="submit" value="Регистрация" name="sab" class="input"> Нажимая «Регистрация», вы подтверждаете, что прочитали и согласны с нашими Условиями Пользования и Политикой Конфиденциальности.
+                    </form>
+                </div>
+            </div>
             <div style="width:100%; height:1px; clear:both;"></div> <!-- выравниваем без обтекания -->
 
          
             <div class="wrapper">
                 <div class="item1">© 2010-2022 GIDEON. Все права защищены.</br>Используемые торговые марки принадлежат владельцам компании.</div>
                 <div class="item2 official__status">Официальные страницы проекта</div>
-                <div class="item3">"GIDEON" - является товарным знаком ООО "SUPERSTAR", зарегистрированным в Беларуси и других странах.</div>
+                <div class="item3 polz"><a class="polz" href="../index/uslovia.html">Пользовательское соглашение "GIDEON"</a>></div>
                 <div class="item4 ">
                     <div class="container official__img">
-                        <div class="children"><img src="images/vk.png" width="48px" height="48px"></div>
-                        <div class="children"><img src="images/inst.png" width="48px" height="48px"></div>
-                        <div class="children"><img src="images/telegram.png" width="48px" height="48px"></div>
-                        <div class="children"><img src="images/facebook.png" width="48px" height="48px"></div>
+                        <a href="https://vk.com/s1mplesss"><div class="children"><img src="images/vk.png" width="48px" height="48px"></div></a>
+                        <a href="https://www.instagram.com"><div class="children"><img src="images/inst.png" width="48px" height="48px"></div></a>
+                        <a href="https://tlgrm.ru"><div class="children"><img src="images/telegram.png" width="48px" height="48px"></div></a>
+                        <a href="https://www.facebook.com"><div class="children"><img src="images/facebook.png" width="48px" height="48px"></div></a>
                     </div>
                 </div>
               </div>
+              
+<!-- Модальное окно №1 -->
+<a href="#x" class="overlay" id="win1"></a>
+<div class="popup">
+   <p class="ptext2"> Наши номера</p>
+<p class="ptext"><img class="img0" src="../index/images/mts.png" width="48px" height="48px">+375 (29) 58-051-01</p>
+<p class="ptext"><img class="img0" src="../index/images/beeline.png"width="48px" height="48px">+900 (44) 580-51-01</p>
+<p class="ptext"><img class="img0" src="../index/images/tele2.png"width="48px" height="48px">+901 (29) 580-51-01</p>
+<a class="close"title="Закрыть" href="#close"></a>
+</div>
+
+
     <script>
         (() => {
             const menuButton = document.querySelector('.menu__button');

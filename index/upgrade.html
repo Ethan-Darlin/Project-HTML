@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <title>Веб-стандарты</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/index.min.css">
+    <link rel="stylesheet" href="../index/styles/contact.css">
+    <style>
+        .ptext {
+    display: flex;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.ptext2 {
+    display: flex;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.polz {
+    text-decoration: none;
+ color: #000000; }
+
+        
+        @media (min-width: 733px) {
+            .shapka{
+                background-color: #423E3E;
+            }
+            .color-text {
+            color: #FFFFFF;
+            font-style: normal;
+            }
+            .color-text1 {
+            color: #FFFFFF;
+            font-weight: 100;
+            }
+            .color-text2 {
+            color: #FFFFFF;
+            }
+        }
+        @media (max-width: 734px){
+            .shapka {
+                background-color: #423E3E;
+            }
+          
+            .light {
+                color: white;
+            }
+        }
+     
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
+        @media (min-width:851px) and (max-width: 1010px) {
+            .textsize{
+            font-size: 9px;
+        }
+    }
+        @media (min-width:735px) and (max-width: 850px) {
+            .textsize{
+            font-size: 7px;
+        }
+    }
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 10px;
+
+  grid-template-areas:
+    "a a a a b b b b"
+    "a a a a b b b b"
+    "c c c c d d d d"
+    "c c c c d d d d";
+  align-items: start;
+}
+.item1 {
+  grid-area: a;
+}
+.item2 {
+  grid-area: b;
+}
+.item3 {
+  grid-area: c;
+}
+.item4 {
+  grid-area: d;
+}
+
+@media (max-width: 1300px) {
+    .wrapper {
+        display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: 20px;
+  grid-template-areas:
+    "a a a a a a a a"
+    "c c c c c c c c"
+    "b b b b b b b b"
+    "d d d d d d d d";
+  align-items: start;
+            }
+
+    
+}
+
+
+@media (min-width: 1301px){
+    .wrapper {
+    grid-gap: 10px;
+}
+}
+
+@media (min-width: 800px){
+    .wrapper {
+    grid-gap: 15px;
+}
+}
+@media ( min-width:550px) and (max-width: 799px){
+    .wrapper {
+    grid-gap: 25px;
+}
+}
+@media ( min-width:300px) and (max-width: 549px){
+    .wrapper {
+    grid-gap: 35px;
+}
+}
+
+
+.container {
+    display: block;
+    overflow: hidden;
+    float: left;
+}
+.children {
+    display: block;
+    float: right;
+   padding-right: 65px;
+    width: 44px;
+    height: 44px;
+}
+@media (min-width: 1301px) {
+    .official__status {
+    text-align: right;
+    margin-right: 13px;
+    font-weight: bold;
+}
+
+}
+@media (min-width: 1301px) {
+    .container {
+    float: right;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+}
+
+.cont {
+    position: relative;
+    text-align: center;
+    color: white;
+    image-rendering: optimizeSpeed;
+
+    font-weight: bold;
+
+    font-size: 40px;
+    
+
+}
+
+@media (min-width: 240px)and (max-width: 1420px) {
+.fon {
+    width: 100%;
+
+}
+}
+@media (min-width: 1420px)and (max-width: 1920px) {
+.fon {
+        height: 700px;
+}
+}
+
+
+.gradient-button {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+}
+
+.gradient-button:hover {
+  background-position: right center;
+}
+
+@media (max-width: 1300px) and (min-width: 543px){
+    .gradient-button {
+        font-size: 13px;
+    }
+}
+@media (max-width: 543px) and (min-width: 200px) {
+    .gradient-button {
+        font-size: 8px;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1920px) {
+    .text3 {
+        font-size: 40px;
+    }
+}
+@media (min-width: 800px) and (max-width: 1200px) {
+    .text3 {
+        font-size: 20px;
+    }
+}
+@media (min-width: 200px) and (max-width: 800px) {
+    .text3 {
+        font-size: 10px;
+    }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1920px) {
+    .centered {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.centered2 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centered3 {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+}
+@media (min-width: 736px) and (max-width: 1200px) {
+    .centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.centered2 {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centered3 {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+}
+@media (min-width: 520px) and (max-width: 736px) {
+    .centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.centered2 {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centered3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+}
+@media (min-width: 250px) and (max-width: 520px) {
+    .centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.centered2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centered3 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+}
+
+
+
+.leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 20px 7px 0; /* Отступы вокруг картинки */
+    padding-top: 0px;
+    margin-top: 60px;
+   }
+   .rightimg  {
+    float: right; /* Выравнивание по правому краю  */ 
+    margin: 7px 7px 7px; /* Отступы вокруг картинки */
+   
+   }
+
+
+
+.main__text {
+    font-size: 40px;
+    font-variant:normal
+    
+    
+}
+.main__text2 {
+    font-size: 20px;
+    padding-left: 40px;
+
+}
+.main__text3 {
+    font-size: 20px;
+    width: 160px;
+    padding-right: 90px;
+    
+}
+.content {
+    background-color: b;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+.gid {
+    text-decoration: none;
+}
+@media (min-width: 736px) {
+    .gid {
+        color: white;
+
+    }
+}
+@media (max-width: 736px) {
+    .gid {
+        color: black;
+    }
+}
+@media (max-width: 736px) {
+    #light {
+        color: black;
+    }
+}
+.ptext {
+    display: flex;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.ptext2 {
+    display: flex;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.polz {
+    text-decoration: none;
+ color: #000000; }
+
+
+    </style>
+</head>
+<body class="page__body">
+    <div class="shapka">
+    <header class="header">
+        <a class="gid" href="../index/index.html" ><div class="header__logo logo">
+            <img class="logo__image" src="images/gide1.svg" width="40" height="44" alt="">
+            <p class="logo__title color-text" id="light"> GIDEON</p>
+            <p class="logo__tagline color-text1">Магазин PC комплектующих</p>
+        </div></a>
+        <nav class="header__menu menu">
+            <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list">
+                <div class="menu__icon" aria-hidden="true" width="32" height="32">
+                    <img id="menu" class="menu__icon-menu" src="images/burger.png" height="40px" width="44px"></img>
+                    <img id="menu" class="menu__icon-cross" src="images/krest.svg"height="40px" width="44px"></img>
+                </div>
+            </button>
+            <ul class="menu__list" id="menu__list">
+                <li class="menu__item">
+                    <a class="textsize menu__link menu__link--current color-text2" href="../index/index.html">Главная</a>
+                </li>
+                <li class="menu__item">
+                    <a class="textsize menu__link menu__link--current color-text2 prof" href="../index/upgrade.html">Апгрейд</a>
+                </li>
+                <li class="menu__item">
+                    <a class="textsize menu__link menu__link--current color-text2" href="../index/uslovia.html">Покупателям</a>
+                </li>
+                <li class="menu__item">
+                    <a class="textsize menu__link menu__link--current color-text2" href="#win1">Контакты</a>
+                </li>
+                <li class="menu__item">
+                    <a class="textsize menu__link menu__link--current color-text2" href="../index/reviews.html">Отзывы</a>
+                </li>
+                <li class="menu__item">
+                    <a class="textsize menu__link menu__link--current color-text2" href=""> +375(44) 580-51-01 </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+            <div style="width:100%; height:1px; clear:both;"></div> <!-- выравниваем без обтекания -->
+            
+            <div class="cont">
+                <img class="fon" src="images/fon.gif" alt="Snow" style="width:100%;">
+                <div class="text3 centered">UPGRADE CENTER</div>
+                <div class="text3 centered2">ПРОКАЧАЙ СВОЙ ПК В GIDEON</div>
+                <div class="centered3"><a href="http://127.0.0.1:3000/" class="gradient-button">Отправить заявку</a><div></div>
+            </div>
+            </div>
+            <div class="content">
+              
+                <p class="main__text2"><img  src="../index/images/fon2.gif" alt="Лейтенант Бокатуев" width="232" height="174" class="leftimg">
+                    <h2 class="main__text">Компьютер для Lololoshka</h2>
+                    Роман Фильченков - очень популярный на YouTube лестплейщик, создал свой канал еще в далеком 2012 году,
+                     за это время он снял более 1170 роликов! В основном он снимает многочисленные, развлекательные видео по майнкрафту.
+                      Его канал насчитывает множество рубрик, таких как «незабываемые испытания» с которой он начал регулярно снимать видео на YouTube,
+                       «летние» и «зимние похождения», «дюжина приключений» и многое многое другое. Для всех поклонников майнкрафта это самый любимый канал!
+                        Так же Роман изредка играет на своем канале в хорроры а так же проводит регулярные стримы и розыгрыши среди подписчиков!Многим может показаться что майнкрафт крайне нетребовательная игра, раз идет на телефоне, но это далеко не всегда так. Для майнкрафта имеется множество модификаций, которые как раз и демонстрирует Роман. К тому же он не только играет на компьютере, но и стримит с него и монтирует ролики.</p>
+                   
+                   <div class="content">
+                   
+                <p class="main__text3">
+                    <h2 class="main__text">Задача</h2></div>
+                    <img  src="../index/images/pclol2.png" width="232" height="174" alt="Учёные, находящиеся в состоянии аффекта" class="rightimg"> 
+                    Роман уже является владельцем двух компьютеров HYPERPC, первый он покупал еще в городе Барнауле, 
+                    второй уже когда переехал в Санкт Петербург, этот компьютер был компактных размеров и с одной видеокартой.
+                     Но в этот раз Роман захотел настоящего зверя с двумя игровыми видеокартами!
+                      Поэтому нам была поставлена задача создать мощный, хорошо охлаждаемый компьютер и при этом не громоздких размеров.
+                       Ну и конечно мы не можем не сделать все это со вкусом.
+                    До этого компьютеры Романа были в «стоковых» дизайнах, таких какими их придумал производитель корпусов и всех комплектующих. В этот раз мы решили прокачать его компьютер посерьёзнее! Корпус взяли прозрачный, из закаленного стекла, а именно CORSAIR Crystal 460X RGB, поэтому в нем мы снаружи ничего в этот раз менять не стали. Но покрасили множество элементов комплектующих, как и часть кожуха для блока питания внутри корпуса. Все элементы (кожух материнской платы, кожухи видеокарт, радиаторы памяти) покрасили в любимы цвет Ромы, в бирюзовый. Этот цвет неотъемлемая часть дизайна канала MrLololoshka. Для равномерного освещения установили 3 дополнительных вентилятора CORSAIR SP120 RGB, и подключили их к основному блоку управления вентиляторами на корпусе, чтобы можно было управлять режимами подсветки и ее цветом прямо с передней панели. Также нанесли на компьютер никнеймы Романа его любимым шрифтом.
+           </p>
+           <br />
+                </div>
+</div>
+
+
+
+            <div class="wrapper">
+                <div class="item1">© 2010-2022 GIDEON. Все права защищены.</br>Используемые торговые марки принадлежат владельцам компании.</div>
+                <div class="item2 official__status">Официальные страницы проекта</div>
+                <div class="item3">"GIDEON" - является товарным знаком ООО "SUPERSTAR", зарегистрированным в Беларуси и других странах.</div>
+                <div class="item4 ">
+                    <div class="container official__img">
+                        <a href="https://vk.com/s1mplesss"><div class="children"><img src="images/vk.png" width="48px" height="48px"></div></a>
+                        <a href="https://www.instagram.com"><div class="children"><img src="images/inst.png" width="48px" height="48px"></div></a>
+                        <a href="https://tlgrm.ru"><div class="children"><img src="images/telegram.png" width="48px" height="48px"></div></a>
+                        <a href="https://www.facebook.com"><div class="children"><img src="images/facebook.png" width="48px" height="48px"></div></a>
+                    </div>
+                </div>
+              </div>
+              
+              <!-- Модальное окно №1 -->
+<a href="#x" class="overlay" id="win1"></a>
+<div class="popup">
+   <p class="ptext2"> Наши номера</p>
+<p class="ptext"><img class="img0" src="../index/images/mts.png" width="48px" height="48px">+375 (29) 58-051-01</p>
+<p class="ptext"><img class="img0" src="../index/images/beeline.png"width="48px" height="48px">+900 (44) 580-51-01</p>
+<p class="ptext"><img class="img0" src="../index/images/tele2.png"width="48px" height="48px">+901 (29) 580-51-01</p>
+<a class="close"title="Закрыть" href="#close"></a>
+</div>
+
+    <script>
+        (() => {
+            const menuButton = document.querySelector('.menu__button');
+            const menuList = document.querySelector('.menu__list');
+
+            menuButton.addEventListener('click', () => {
+                let expanded = menuButton.getAttribute('aria-expanded') === 'true';
+                menuButton.setAttribute('aria-expanded', !expanded);
+                menuButton.classList.toggle('menu__button--open');
+                menuList.classList.toggle('menu__list--open');
+            });
+        })();
+    </script>
+</body>
+</html>
+
+
