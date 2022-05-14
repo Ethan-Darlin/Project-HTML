@@ -1,0 +1,190 @@
+.blockg
+{
+    display: block;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+.margin 
+{
+    margin: 0px;
+}
+p,h2,h3,h1 
+{
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.kt 
+{
+    text-align: center;
+    display: block;
+}
+
+//
+@media (min-width: 733px) {
+    .shapka{
+    background-color: #423E3E;
+    }
+    .color-text {
+    color: #FFFFFF;
+    font-style: normal;
+    }
+    .color-text1 {
+    color: #FFFFFF;
+    font-weight: 100;
+    }
+    .color-text2 {
+    color: #FFFFFF;
+    }
+}
+@media (max-width: 734px){
+    .shapka {
+        background-color: #423E3E;
+    }
+  
+    .light {
+        color: white;
+    }
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+@media (min-width:851px) and (max-width: 1010px) {
+    .textsize{
+    font-size: 9px;
+}
+}
+@media (min-width:735px) and (max-width: 850px) {
+    .textsize{
+    font-size: 7px;
+}
+}
+
+
+.wrapper {
+display: grid;
+grid-template-columns: repeat(8, 1fr);
+grid-gap: 10px;
+
+grid-template-areas:
+"a a a a b b b b"
+"a a a a b b b b"
+"c c c c d d d d"
+"c c c c d d d d";
+align-items: start;
+}
+.item1 {
+grid-area: a;
+}
+.item2 {
+grid-area: b;
+}
+.item3 {
+grid-area: c;
+}
+.item4 {
+grid-area: d;
+}
+
+@media (max-width: 1300px) {
+.wrapper {
+display: grid;
+grid-template-columns: repeat(8, 1fr);
+grid-gap: 10px;
+grid-auto-rows: 20px;
+grid-template-areas:
+"a a a a a a a a"
+"c c c c c c c c"
+"b b b b b b b b"
+"d d d d d d d d";
+align-items: start;
+    }
+
+
+}
+
+
+@media (min-width: 1301px){
+.wrapper {
+grid-gap: 10px;
+}
+}
+
+@media (min-width: 800px){
+.wrapper {
+grid-gap: 15px;
+}
+}
+@media ( min-width:550px) and (max-width: 799px){
+.wrapper {
+grid-gap: 25px;
+}
+}
+@media ( min-width:300px) and (max-width: 549px){
+.wrapper {
+grid-gap: 35px;
+}
+}
+
+
+.container {
+display: block;
+overflow: hidden;
+float: left;
+}
+.children {
+display: block;
+float: right;
+padding-right: 65px;
+width: 44px;
+height: 44px;
+}
+@media (min-width: 1301px) {
+.official__status {
+text-align: right;
+margin-right: 13px;
+font-weight: bold;
+}
+
+}
+@media (min-width: 1301px) {
+.container {
+float: right;
+margin-right: 5px;
+font-weight: bold;
+}
+
+}
+
+
+
+.ptext {
+display: flex;
+align-items: center;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold;
+}
+.ptext2 {
+display: flex;
+align-items: center;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold;
+font-size: 20px;
+}
+.polz {
+text-decoration: none;
+color: #000000; }
+.gid {
+text-decoration: none;
+}
+@media (min-width: 736px) {
+.gid {
+color: white;
+
+}
+}
+@media (max-width: 736px) {
+.gid {
+color: black;
+}
+}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <title>Веб-стандарты</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/index.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/style_2.css">
+    <!-- сss -->
+    <link rel="stylesheet" href="style/media.css">
+    <!-- сss -->
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <!-- Иконка-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="styles/index.css">
+   <link rel="stylesheet" href="../index/styles/contact.css">
+   <script>
+    //Функция показа
+        function show(state)
+        {
+        document.getElementById('window').style.display = state;	
+        document.getElementById('gray').style.display = state; 		
+        }	
+
+
+    </script> 
+   <style>
+
+@media (min-width: 900px) and (max-width: 1920px) {
+aside.part .units .unit img {
+        width: 60%;
+    }
+}
+@media (min-width: 400px) and (max-width: 900px) {
+aside.part .units .unit img {
+        width: 80%;
+    }
+}
+.logo_teg{
+    width: 1px;
+    height: 1px;
+} 
+a {
+    text-decoration: none;
+}
+.shine-button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 30px;
+  margin: 10px 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #fe6637;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fe6637;
+  transition: .2s ease-in-out;
+}
+.shine-button:before {
+  content: "";
+  background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -8px;
+  left: -75px;
+  transform: skewX(-45deg);
+}
+.shine-button:hover {
+  background: #fe6637;
+  color: #fff;
+}
+.shine-button:hover:before {
+  left: 150px;
+  transition: .5s ease-in-out;
+}
+   </style>
+     <style>
+
+
+        #window {
+            width: 350px;
+            height: 530px;
+            margin: 40px auto;
+            background: #fff;
+            border: 1px solid #fff;
+            border-radius: 15px;
+            z-index: 150; display: none;
+             position: fixed; left: 0;right: 0;top:0;bottom: 0;
+        } 
+        .form{
+            width: 275px; margin: -15px auto 20px auto; text-align: center;} 
+        .input{
+                width: 260px;padding: 5px; margin-bottom: 10px; } 
+        .radio{
+            margin-bottom: 10px;} .close{margin: 10px 0 0 320px;cursor: pointer;border: 1px solid #ccc; padding: 2px; background: #ccc;} .close:hover{
+                background: #fff;} 
+        #gray{opacity: 0.8; padding: 15px;
+            background-color: rgba(1,1,1,0.75); position: fixed; left: 0;right: 0;top:0;bottom: 0; display: none; z-index:100; overflow: auto; } 
+    area {
+      -ms-grid-column: 2;
+      grid-column: 2;
+      text-align: right;
+    }
+    .ptext {
+    display: flex;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.ptext2 {
+    display: flex;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.polz {
+    text-decoration: none;
+ color: #000000; }
+
+ @media (max-width: 736px) {
+  .color-text5 {
+    color: black;
+  }
+}
+.buton {
+    margin-left: 50%;
+}
+    </style>
+</head>
+<body class="page__body">
+    <header class="header">
+        <a href="../index/index.html" ><div class="header__logo logo">
+            <img class="logo__image" src="../index/images/gide1.svg" width="40" height="44" alt="">
+            <p class="logo__title color-text5">GIDEON</p>
+            <p class="logo__tagline">МАГАЗИН PC КОМПЛЕКТУЮЩИХ</p>
+        </div></a>
+        <nav class="header__menu menu">
+            <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list">
+                <div class="menu__icon" aria-hidden="true" width="32" height="32">
+                    <img id="menu" class="menu__icon-menu" src="images/burger.png" height="40px" width="44px"></img>
+                    <img id="menu" class="menu__icon-cross" src="images/krest.svg"height="40px" width="44px"></img>
+                </div>
+            </button>
+            <ul class="menu__list" id="menu__list">
+                <li class="menu__item">
+                    <a class="textsize menu__link menu__link--current" href="../index/index.html">Главная</a>
+                </li>
+                <li class="menu__item">
+                    <a class="textsize menu__link menu__link--current" href="../index/upgrade.html">АПГРЕЙД</a>
+                </li>
+                <li class="menu__item">
+                    <a class="textsize menu__link menu__link--current" href="../index/uslovia.html">Покупателям</a>
+                </li>
+                <li class="menu__item">
+                    <a class="textsize menu__link menu__link--current" href="#win1">КОНТАКТЫ</a>
+                </li>
+                <li class="menu__item">
+                    <a class="textsize menu__link menu__link--current" href="../index/reviews.html">Отзывы</a>
+                </li>
+                <li class="menu__item">
+                    <a class="textsize menu__link menu__link--current">+375 (44) 580-51-01</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="aside part">
+        <div class="units">
+            <h1 class="asort">АССОРТИМЕНТ ПЕРИФЕРИИ</h1>
+            <div class="unit">
+                
+                <img class="cpu" src="image/pher/pher10.png" alt="" />
+                <div>
+                    <h1>Клавиатура + мышь с ковриком Redragon S107</h1>
+                    <p>клавиатура + мышь с ковриком для ПК, мышь проводная USB (сенсор оптический), клавиатура USB, цвет черный</p>
+                    <form method="post" onsubmit="return false">
+                        <button onclick="show('block')" class="regButton shine-button"> BUY  80,24 BYN</button>
+                             </form>
+                </div>
+            </div>
+            <div class="unit">
+                <img class="cpu" src="image/pher/pher11.png"alt="" />
+                <div>
+                    <h1>Клавиатура + мышь Logitech Wireless Combo MK240 (920-005790)</h1>
+                    <p>клавиатура + мышь для ПК, мышь беспроводная радио (сенсор оптический), клавиатура радио</p>
+                    <form method="post" onsubmit="return false">
+                        <button onclick="show('block')" class="regButton shine-button"> BUY  79,55 BYN</button>
+                             </form>
+                </div>
+            </div>
+            <div class="unit">
+                <img class="cpu" src="image/pher/pher12.png"alt="" />
+                <div>
+                    <h1>Клавиатура + мышь с ковриком + наушники Havit KB501CM</h1>
+                    <p>клавиатура + мышь с ковриком + наушники для ПК, мышь проводная USB (сенсор оптический), клавиатура USB, цвет черный</p>
+                    <form method="post" onsubmit="return false">
+                        <button onclick="show('block')" class="regButton shine-button"> BUY  70,00 BYN</button>
+                             </form>
+                </div>
+            </div>
+            <div class="unit">
+                <img class="cpu" src="image/pher/pher13.png" alt="" />
+                <div>
+                    <h1>Клавиатура + мышь A4Tech Bloody B2100</h1>
+                    <p>клавиатура + мышь для ПК, мышь проводная USB (сенсор оптический), цвет черный</p>
+                    <form method="post" onsubmit="return false">
+                        <button onclick="show('block')" class="regButton shine-button"> BUY  130,85 BYN</button>
+                             </form>
+                </div>
+            </div>
+            <div class="unit">
+                <img class="cpu" src="image/pher/pher14.png" alt="" />
+                <div>
+                    <h1>Клавиатура + мышь Dell Pro Wireless KM7321W 580-AJQP</h1>
+                    <p>клавиатура + мышь для ПК, мышь беспроводная радио/Bluetooth (сенсор оптический), клавиатура радио/Bluetooth, цвет серый</p>
+                    <form method="post" onsubmit="return false">
+                        <button onclick="show('block')" class="regButton shine-button"> BUY  815,84 BYN</button>
+                             </form>
+                </div>
+            </div>
+            <div class="unit">
+                <img class="cpu" src="image/pher/6.png" alt="" />
+                <div>
+                    <h1>Клавиатура + мышь Lenovo Professional Ultraslim Wireless Combo</h1>
+                    <p>клавиатура + мышь для ПК, мышь беспроводная радио (сенсор оптический), клавиатура радио, цвет черный</p>
+                    <form method="post" onsubmit="return false">
+                        <button onclick="show('block')" class="regButton shine-button"> BUY  417,94 BYN</button>
+                             </form>
+                </div>
+            </div>
+            <div class="unit">
+                <img class="cpu" src="image/pher/8.png" alt="" />
+                <div>
+                    <h1>Клавиатура + мышь Corsair K55 + HARPOON RGB CH-9206115-NA</h1>
+                    <p>клавиатура + мышь для ПК, мышь проводная USB (сенсор оптический), клавиатура USB, цвет черный</p>
+                    <form method="post" onsubmit="return false">
+                        <button onclick="show('block')" class="regButton shine-button"> BUY  299,00 BYN</button>
+                             </form>
+                </div>
+            </div>
+            <div class="unit">
+                <img class="cpu" src="image/pher/9.png" alt="" />
+                <div>
+                    <h1>Коврик для мыши HP Omen Outpost</h1>
+                    <p>оптические мыши/лазерные мыши, пластик, 370x320 мм, цвет черный</p>
+                    <form method="post" onsubmit="return false">
+                        <button onclick="show('block')" class="regButton shine-button"> BUY  3490,00 BYN</button>
+                             </form>
+                </div>
+            </div>
+            <div class="unit">
+                <img class="cpu" src="image/pher/10.png"alt="" />
+                <div>
+                    <h1>Клавиатура Thermaltake Argent K5 RGB (Cherry MX Blue)</h1>
+                    <p>игровая для ПК, механическая, Cherry MX Blue, ход тактильный/с кликом, металлическая верхняя панель, интерфейс подключения - USB, подсветка, USB-хаб, цвет серый/сиреневый/черный</p>
+                    <form method="post" onsubmit="return false">
+                        <button onclick="show('block')" class="regButton shine-button"> BUY  683,40 BYN</button>
+                             </form>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <a href="../Asort/perif.html"><button class="shine-button buton"> <--Back</button></a>
+    <div class="wrapper">
+        <div class="item1">© 2010-2022 GIDEON. Все права защищены.</br>Используемые торговые марки принадлежат владельцам компании.</div>
+        <div class="item2 official__status">Официальные страницы проекта</div>
+        <div class="item3">"GIDEON" - является товарным знаком ООО "SUPERSTAR", зарегистрированным в Беларуси и других странах.</div>
+        <div class="item4 ">
+            <div class="container official__img">
+                <a href="https://vk.com/s1mplesss"><div class="children"><img src="images/vk.png" width="48px" height="48px"></div></a>
+                <a href="https://www.instagram.com"><div class="children"><img src="images/inst.png" width="48px" height="48px"></div></a>
+                <a href="https://tlgrm.ru"><div class="children"><img src="images/telegram.png" width="48px" height="48px"></div></a>
+                <a href="https://www.facebook.com"><div class="children"><img src="images/facebook.png" width="48px" height="48px"></div></a>
+            </div>
+        </div>
+      </div>
+<!-- Модальное окно №1 -->
+<a href="#x" class="overlay" id="win1"></a>
+<div class="popup">
+   <p class="ptext2"> Наши номера</p>
+<p class="ptext"><img class="img0" src="../index/images/mts.png" width="48px" height="48px">+375 (29) 58-051-01</p>
+<p class="ptext"><img class="img0" src="../index/images/beeline.png"width="48px" height="48px">+900 (44) 580-51-01</p>
+<p class="ptext"><img class="img0" src="../index/images/tele2.png"width="48px" height="48px">+901 (29) 580-51-01</p>
+<a class="close"title="Закрыть" href="#close"></a>
+</div>
+       <!-- Задний прозрачный фон -->
+       <div onclick="show('none')" id="gray"></div>
+       <div id="window">
+           <!-- Картинка крестика -->
+           <img class="close" src="../index/images/krestik.png" alt=""  onclick="show('none')">
+           <div class="form">
+               <h2>Регистрация</h2>
+               <form action="index.html" name="f1">
+                   <input type="text" placeholder="Имя" name="name1" class="input">
+                   <input type="text" placeholder="Фамилия" name="name2" class="input">
+                   <input type="email" placeholder="Емеил" name="email1" class="input">
+                   <input type="email" placeholder="Подтвердите адрес Электронной Почты" name="email2" class="input">
+                   <input type="password" placeholder="Пароль" name="pass1" class="input">
+                   <input type="password" placeholder="Подтвердите пароль" name="pass2" class="input">
+                   <input type='tel' placeholder="Мобильный телефон" name="tel" class="input">
+                   <input type="submit" value="Регистрация" name="sab" class="input"> Нажимая «Регистрация», вы подтверждаете, что прочитали и согласны с нашими Условиями Пользования и Политикой Конфиденциальности.
+               </form>
+           </div>
+       </div>
+    <script>
+        (() => {
+            const menuButton = document.querySelector('.menu__button');
+            const menuList = document.querySelector('.menu__list');
+
+            menuButton.addEventListener('click', () => {
+                let expanded = menuButton.getAttribute('aria-expanded') === 'true';
+                menuButton.setAttribute('aria-expanded', !expanded);
+                menuButton.classList.toggle('menu__button--open');
+                menuList.classList.toggle('menu__list--open');
+            });
+        })();
+    </script>
+</body>
+</html>
