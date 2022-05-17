@@ -98,7 +98,7 @@
   border-radius: 8px;
   font-family: 'Montserrat', sans-serif;
   color: #fe6637;
-  transition: .2s ease-in-out;
+  transition: .10s ease-in-out;
 }
 .shine-button:before {
   content: "";
@@ -107,15 +107,15 @@
   width: 50px;
   position: absolute;
   top: -8px;
-  left: -75px;
-  transform: skewX(-45deg);
+  left: -75px; 
+  transform: skewX(-45deg); 
 }
 .shine-button:hover {
   background: #fe6637;
   color: #fff;
 }
 .shine-button:hover:before {
-  left: 150px;
+  left: 350px;
   transition: .5s ease-in-out;
 }
 .UPGRAGE {
@@ -126,6 +126,11 @@
     font-size: 40px;
     
    
+}
+@media (max-width: 380px) {
+    .shine-button {
+        padding: 0px;
+    }
 }
 
 
@@ -420,15 +425,15 @@ figcaption {
     <div class="shapka">
     <header class="header">
         <a href="../index/index.html" > <div class="header__logo logo">
-            <img class="logo__image" src="images/gide1.svg" width="90px" height="100px" alt="">
+            <img class="logo__image" src="images/gide1.svg" width="90" height="100" alt="">
             <p class="logo__title color-text tex" id="light"> GIDEON</p>
             <p class="logo__tagline color-text1 tex">Магазин PC комплектующих</p>
         </div></a>
         <nav class="header__menu menu">
             <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list">
                 <div class="menu__icon" aria-hidden="true" width="32" height="32">
-                    <img id="menu" class="menu__icon-menu" src="images/burger.png" height="40px" width="44px"></img>
-                    <img id="menu" class="menu__icon-cross" src="images/krest.svg"height="40px" width="44px"></img>
+                    <img id="menu" class="menu__icon-menu" src="images/burger.png" height="40" width="44" alt="" />
+                    <img id="menu" class="menu__icon-cross" src="images/krest.svg" height="40" width="44" alt="" />
                 </div>
             </button>
             <ul class="menu__list" id="menu__list">
@@ -457,7 +462,7 @@ figcaption {
    <div class="bigO">
         <div class="grih">
             <div class="UPGRAGE">
-                <p class="siz">UPGRADE CENTER<br \>
+                <p class="siz">UPGRADE CENTER<br />
                 СДЕЛАЙ СВОЙ КОМЬЮТЕР ЛУЧШЕ!</p>
                 <form>
                     <a href="upgrade.html" class="shine-button">UPGRADE</a>
@@ -470,27 +475,27 @@ figcaption {
                 <h1 class="linek">Линейки GIDEON</h1>
                 <div class="phex">
                     <figure>
-                    <img class="imgfig" src="images/laptop1.png" width="350px" height="300px"> 
+                    <img class="imgfig" src="images/laptop1.png" width="350" height="300" alt="" > 
                     <figcaption class="fig">Игровые ноутбуки </figcaption>
-                    <figcaption class="fig">Мощные и ультратонкие </br>игровые ноутбуки</figcaption>
+                    <figcaption class="fig">Мощные и ультратонкие <br />игровые ноутбуки</figcaption>
                     <figcaption class="fig">от 1500$</figcaption>
                     <a href="../Asort/laptop.html" class="floating-button">Купить</a>
                 </figure>
                 </div>
                 <div class="phex">
                     <figure>
-                    <img class="imgfig" src="images/PC.png"  width="350px" height="300px">
+                    <img class="imgfig" src="images/PC.png"  width="350" height="300" alt="" >
                     <figcaption class="fig">Игровые компьютеры </figcaption>
-                    <figcaption class="fig">Самые лучшие игровые</br>компьютеры GIDEON</figcaption>
+                    <figcaption class="fig">Самые лучшие игровые<br />компьютеры GIDEON</figcaption>
                     <figcaption class="fig">от 1100$</figcaption>
                     <a href="../Asort/PC.html" class="floating-button">Купить</a>
                 </figure>
                 </div>
                 <div class="phex">
                 <figure>
-                    <img class="imgfig" src="images/bledboard.png" width="350px" height="300px">
+                    <img class="imgfig" src="images/bledboard.png" width="350" height="300" alt="" >
                     <figcaption class="fig">Игровая периферия  </figcaption>
-                    <figcaption class="fig">Лучшая переферия </br>с самым быстрым откликом</figcaption>
+                    <figcaption class="fig">Лучшая переферия <br />с самым быстрым откликом</figcaption>
                     <figcaption class="fig">от 110$</figcaption>
                     <a href="../Asort/perif.html" class="floating-button">Купить</a>
                 </figure>
